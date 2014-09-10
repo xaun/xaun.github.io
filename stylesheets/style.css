@@ -1,0 +1,56 @@
+/* line 7, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  border-bottom: 4px solid black;
+  text-align: right;
+  z-index: 10;
+  background-color: white; }
+  /* line 16, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  nav h1 {
+    position: absolute;
+    margin-left: 20px;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 4px;
+    top: -4px; }
+  /* line 24, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  nav ul {
+    display: inline-block;
+    margin: 40px 30px 0 0; }
+    /* line 28, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+      padding-left: 60px; }
+
+/* line 37, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+a, a:hover {
+  text-decoration: none !important;
+  color: black !important; }
+
+/* line 52, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+#about {
+  background-image: url(/images/background.jpg);
+  background-repeat: repeat;
+  background-position: center 90px;
+  background-origin: center;
+  background-attachment: fixed; }
+  /* line 59, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  #about .about-margin {
+    top: 90px;
+    text-align: center;
+    position: absolute;
+    padding: 90px 300px !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url(); }
+
+/* line 70, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+#projects {
+  text-align: center;
+  border-top: 2px solid black; }
+  /* line 84, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  #projects #image1 {
+    display: inline-block;
+    width: 750px;
+    height: auto; }
