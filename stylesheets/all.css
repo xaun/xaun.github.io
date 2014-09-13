@@ -434,47 +434,68 @@ a, a:hover {
     background-color: rgba(255, 255, 255, 0.8);
     background-image: url(); }
 
-/* line 100, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+/* line 104, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
 #projects {
   text-align: center;
   border-top: 2px solid black; }
-  /* line 104, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
-  #projects p {
-    margin: 15px 340px; }
   /* line 108, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  #projects p {
+    margin: 15px 0;
+    margin-left: 20%;
+    margin-right: 20%; }
+    @media (max-width: 990px) {
+      /* line 108, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      #projects p {
+        margin-left: 15%;
+        margin-right: 15%; } }
+    @media (max-width: 780px) {
+      /* line 108, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      #projects p {
+        margin-left: 10%;
+        margin-right: 10%; } }
+  /* line 124, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   #projects h3 {
     margin-top: 10px; }
-  /* line 112, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 128, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   #projects .btn {
     border: 1px solid black;
     padding: 4px 15px;
     margin: 10px 0 40px 0;
     display: inline-block; }
-  /* line 119, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 135, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   #projects .btn-1:hover {
     background-color: #ea9d73; }
-  /* line 122, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 138, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   #projects .btn-2:hover {
     background-color: #ecc76e; }
-  /* line 125, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 141, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   #projects .btn-3:hover {
     background-color: #f3d796; }
-  /* line 128, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 144, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   #projects .btn-4:hover {
     background-color: #8fa670; }
-  /* line 133, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 148, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  #projects .carousel-arrow {
+    position: absolute;
+    right: 270px;
+    top: 407px;
+    cursor: pointer; }
+  /* line 155, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  #projects .arrow-1 {
+    top: 427px; }
+  /* line 162, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   #projects #storebuilder-description {
     position: relative;
     border-bottom: 1px solid black;
     padding-bottom: 20px; }
-    /* line 143, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    /* line 167, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
     #projects #storebuilder-description #storebuilder-carousel {
       position: relative;
       overflow: hidden;
       width: 750px;
       height: 415px;
       margin: auto; }
-      /* line 150, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 170, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
       #projects #storebuilder-description #storebuilder-carousel img {
         display: none;
         position: absolute;
@@ -482,27 +503,21 @@ a, a:hover {
         left: 0;
         width: 750px;
         height: auto;
-        border: 5px solid black;
+        border: 7px solid black;
         border-radius: 10px; }
-  /* line 164, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
-  #projects .carousel-arrow {
-    position: absolute;
-    right: 270px;
-    top: 386px;
-    cursor: pointer; }
-  /* line 173, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 178, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   #projects #threedee-description {
     position: relative;
     border-bottom: 1px solid black;
-    padding-bottom: 50px; }
-    /* line 178, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    padding-bottom: 40px; }
+    /* line 183, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
     #projects #threedee-description #threedee-carousel {
       position: relative;
       overflow: hidden;
       width: 750px;
       height: 415px;
       margin: auto; }
-      /* line 185, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 186, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
       #projects #threedee-description #threedee-carousel img {
         display: none;
         position: absolute;
@@ -510,21 +525,21 @@ a, a:hover {
         left: 0;
         width: 750px;
         height: auto;
-        border: 5px solid black;
+        border: 7px solid black;
         border-radius: 10px; }
-  /* line 199, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 192, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   #projects #cloudchaser-description {
     position: relative;
     border-bottom: 1px solid black;
-    padding-bottom: 50px; }
-    /* line 204, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    padding-bottom: 40px; }
+    /* line 197, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
     #projects #cloudchaser-description #cloudchaser-carousel {
       position: relative;
       overflow: hidden;
       width: 750px;
       height: 415px;
       margin: auto; }
-      /* line 211, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 200, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
       #projects #cloudchaser-description #cloudchaser-carousel img {
         display: none;
         position: absolute;
@@ -532,10 +547,10 @@ a, a:hover {
         left: 0;
         width: 750px;
         height: auto;
-        border: 5px solid black;
+        border: 7px solid black;
         border-radius: 10px; }
 
-/* line 226, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+/* line 207, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
 footer {
   height: 200px;
   background-image: url(/images/background.jpg);
@@ -543,17 +558,22 @@ footer {
   background-position: center;
   background-origin: center;
   background-attachment: fixed; }
-  /* line 234, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 215, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
   footer #contact-links {
     position: relative;
     margin-top: 60px;
     color: black;
     display: inline-block; }
-    /* line 242, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    /* line 223, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
     footer #contact-links li {
       list-style: none;
       display: inline-block;
       padding: 10px 30px; }
+
+@media all and (max-device-width: 320px) {
+  /* line 233, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  nav {
+    background-color: green; } }
 /*
 
 */
