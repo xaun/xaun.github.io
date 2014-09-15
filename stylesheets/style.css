@@ -1,262 +1,308 @@
-/* line 14, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+/* line 14, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
 nav {
   position: fixed;
   width: 100%;
   height: 90px;
-  border-bottom: 4px solid black;
   text-align: right;
   z-index: 10;
-  background-color: white; }
-  /* line 23, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  background-color: white;
+  -webkit-box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.29);
+  -moz-box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.29);
+  box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.29); }
+  /* line 31, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   nav h1 {
     position: absolute;
     margin-left: 20px;
     font-family: 'Poiret One', cursive;
     letter-spacing: 4px;
-    top: 25px; }
-    @media all and (max-device-width: 320px) {
-      /* line 23, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    top: -5px;
+    font-size: 54px; }
+    @media (max-width: 975px) {
+      /* line 31, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       nav h1 {
-        font-size: 4em;
-        top: 7px; } }
-  /* line 36, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+        font-size: 34px; } }
+    @media (max-width: 865px) {
+      /* line 31, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+      nav h1 {
+        margin-left: 10px; } }
+    @media (max-width: 612px) {
+      /* line 31, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+      nav h1 {
+        font-size: 24px;
+        margin-left: 10px; } }
+  /* line 53, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   nav ul {
     display: inline-block;
-    margin: 64px 30px 0 0; }
-    @media (max-width: 480px) {
-      /* line 36, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
-      nav ul {
-        margin: 12px 10px 0 0;
-        border-left: 1px dashed black;
-        padding-left: 0px; } }
-    /* line 46, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    margin: 0px;
+    padding: 0px; }
+    /* line 58, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
     nav ul li {
       display: inline-block;
       list-style: none;
-      padding-left: 40px; }
-      /* line 51, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      padding: 35px 20px 0 20px;
+      font-family: 'Poiret One', cursive !important;
+      font-size: 1.3em;
+      height: 90px;
+      -o-transition: .2s;
+      -ms-transition: .2s;
+      -moz-transition: .2s;
+      -webkit-transition: .2s;
+      transition: .2s; }
+      /* line 71, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       nav ul li:hover {
-        text-decoration: underline; }
-      @media (max-width: 480px) {
-        /* line 46, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+        background: white;
+        border-bottom: 3px solid black; }
+      @media (max-width: 865px) {
+        /* line 58, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
         nav ul li {
-          display: block;
-          padding: 15px 0 0 10px; } }
-      @media all and (max-device-width: 320px) {
-        /* line 46, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+          padding: 35px 10px 0 10px; } }
+      @media (max-width: 750px) {
+        /* line 58, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
         nav ul li {
-          font-size: 26px;
-          margin-top: -45px; } }
+          padding: 55px 10px 0 10px; } }
+      @media (max-width: 506px) {
+        /* line 58, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+        nav ul li {
+          font-size: 1.1em;
+          padding-top: 55px; } }
+      @media (max-width: 452px) {
+        /* line 58, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+        nav ul li {
+          font-size: 1em;
+          padding: 55px 7px 0 7px; } }
 
-/* line 69, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+/* line 98, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
 a, a:hover {
   text-decoration: none !important;
   color: black !important; }
 
-/* line 80, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+/* line 109, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
 #about {
   background-image: url(/images/background.jpg);
   background-repeat: repeat;
   background-position: center 90px;
   background-origin: center;
   background-attachment: fixed; }
-  /* line 87, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 116, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   #about p {
     font-size: 18px; }
-    /* line 90, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    /* line 119, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
     #about p span {
       color: grey;
       font-size: 14px; }
-  /* line 96, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 125, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   #about .about-margin {
     top: 90px;
     width: 100%;
     text-align: center;
     position: absolute;
     padding: 90px 16%;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.6); }
     @media (max-width: 610px) {
-      /* line 96, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 125, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #about .about-margin {
         padding: 90px 7%; } }
     @media all and (max-device-width: 320px) {
-      /* line 96, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 125, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #about .about-margin {
         padding: 90px 50px; }
-        /* line 112, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+        /* line 141, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
         #about .about-margin p {
           font-size: 36px;
           padding: 20px 0; }
-        /* line 118, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+        /* line 147, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
         #about .about-margin span {
           font-size: 24px; } }
 
-/* line 158, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+/* line 188, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
 #projects {
   text-align: center;
-  border-top: 2px solid black; }
-  /* line 162, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  -webkit-box-shadow: 5px 15px 22px 9px rgba(36, 36, 36, 0.33);
+  -moz-box-shadow: 5px 15px 22px 9px rgba(36, 36, 36, 0.33);
+  box-shadow: 5px 15px 22px 9px rgba(36, 36, 36, 0.33); }
+  /* line 195, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   #projects p {
     margin: 15px 0;
     margin-left: 20%;
     margin-right: 20%; }
     @media (max-width: 990px) {
-      /* line 162, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 195, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #projects p {
         margin-left: 15%;
         margin-right: 15%; } }
     @media (max-width: 780px) {
-      /* line 162, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 195, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #projects p {
         margin-left: 10%;
         margin-right: 10%; } }
     @media all and (max-device-width: 320px) {
-      /* line 162, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 195, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #projects p {
         font-size: 26px;
         margin: 15px 5%; } }
-  /* line 183, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 216, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   #projects h3 {
-    margin-top: 10px; }
+    font-family: 'Poiret One', cursive;
+    margin: 0;
+    padding-top: 20px;
+    text-decoration: underline;
+    font-size: 2.2em; }
     @media all and (max-device-width: 320px) {
-      /* line 183, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 216, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #projects h3 {
-        font-size: 2.4em; } }
-  /* line 191, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+        font-size: 2.6em; } }
+  /* line 228, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   #projects .btn {
-    border: 1px solid black;
     padding: 4px 15px;
     margin: 10px 0 25px 0;
     display: inline-block; }
     @media all and (max-device-width: 320px) {
-      /* line 191, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 228, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #projects .btn {
         padding: 12px 45px; } }
-  /* line 202, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
-  #projects .btn-1:hover {
-    background-color: #ea9d73; }
-  /* line 205, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
-  #projects .btn-2:hover {
-    background-color: #ecc76e; }
-  /* line 208, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
-  #projects .btn-3:hover {
-    background-color: #f3d796; }
-  /* line 211, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
-  #projects .btn-4:hover {
-    background-color: #8fa670; }
-  /* line 215, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 238, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+  #projects .btn-1 {
+    background-color: #f4ccb6; }
+    /* line 240, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+    #projects .btn-1:hover {
+      background-color: #fa9863; }
+  /* line 244, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+  #projects .btn-2 {
+    background-color: #f5e1b2; }
+    /* line 246, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+    #projects .btn-2:hover {
+      background-color: #fcce5e; }
+  /* line 250, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+  #projects .btn-3 {
+    background-color: #fbf1db; }
+    /* line 252, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+    #projects .btn-3:hover {
+      background-color: #ffdc8a; }
+  /* line 256, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+  #projects .btn-4 {
+    background-color: #b4c39f; }
+    /* line 258, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+    #projects .btn-4:hover {
+      background-color: #91b264; }
+  /* line 263, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   #projects .btn.btn-5 {
     width: 200px;
     bottom: -30px;
     right: 2%;
-    margin-top: 40px; }
-  /* line 222, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
-  #projects .btn.btn-5:hover {
-    background: #6aa098; }
-  /* line 229, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    margin-top: 40px;
+    background: #99beb8; }
+    /* line 270, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+    #projects .btn.btn-5:hover {
+      background: #5eaca1; }
+  /* line 279, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   #projects #storebuilder-description {
     position: relative;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px; }
-    /* line 234, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    padding-bottom: 60px; }
+    /* line 284, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
     #projects #storebuilder-description .carousel-container {
       width: 100%; }
-      /* line 237, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      /* line 287, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #projects #storebuilder-description .carousel-container #storebuilder-carousel {
         position: relative;
         overflow: hidden;
         width: 750px;
         margin: auto;
-        -webkit-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-        box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75); }
-        /* line 240, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+        -webkit-box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.75);
+        -moz-box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.75);
+        box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.75); }
+        /* line 290, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
         #projects #storebuilder-description .carousel-container #storebuilder-carousel img {
           display: none;
           position: absolute;
           top: 0;
           left: 0;
           height: auto;
-          -webkit-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75); }
+          cursor: pointer; }
           @media (max-width: 770px) {
-            /* line 240, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+            /* line 290, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
             #projects #storebuilder-description .carousel-container #storebuilder-carousel img {
               margin-left: 5px; } }
-  /* line 248, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 298, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   #projects #threedee-description {
     position: relative;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px; }
-    /* line 253, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    padding-bottom: 60px; }
+    /* line 303, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
     #projects #threedee-description #threedee-carousel {
       position: relative;
       overflow: hidden;
       width: 750px;
       margin: auto;
-      -webkit-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-      box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75); }
-      /* line 256, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      -webkit-box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.75);
+      -moz-box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.75);
+      box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.75); }
+      /* line 306, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #projects #threedee-description #threedee-carousel img {
         display: none;
         position: absolute;
         top: 0;
         left: 0;
         height: auto;
-        -webkit-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-        box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75); }
+        cursor: pointer; }
         @media (max-width: 770px) {
-          /* line 256, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+          /* line 306, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
           #projects #threedee-description #threedee-carousel img {
             margin-left: 5px; } }
-  /* line 262, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  /* line 312, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   #projects #cloudchaser-description {
     position: relative;
-    border-bottom: 1px solid black;
-    padding-bottom: 40px; }
-    /* line 267, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    padding-bottom: 90px; }
+    /* line 317, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
     #projects #cloudchaser-description #cloudchaser-carousel {
       position: relative;
       overflow: hidden;
       width: 750px;
       margin: auto;
-      -webkit-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-      box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75); }
-      /* line 270, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+      -webkit-box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.75);
+      -moz-box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.75);
+      box-shadow: 0px 8px 25px -2px rgba(36, 36, 36, 0.75); }
+      /* line 320, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
       #projects #cloudchaser-description #cloudchaser-carousel img {
         display: none;
         position: absolute;
         top: 0;
         left: 0;
         height: auto;
-        -webkit-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75);
-        box-shadow: 0px 8px 34px -2px rgba(0, 0, 0, 0.75); }
+        cursor: pointer; }
         @media (max-width: 770px) {
-          /* line 270, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+          /* line 320, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
           #projects #cloudchaser-description #cloudchaser-carousel img {
             margin-left: 5px; } }
 
-/* line 277, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+/* line 327, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
 footer {
   height: 260px;
   background-image: url(/images/background.jpg);
   background-repeat: repeat;
   background-position: center;
   background-origin: center;
-  background-attachment: fixed; }
-  /* line 285, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+  background-attachment: fixed;
+  text-align: center; }
+  /* line 337, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
   footer #contact-links {
-    position: relative;
     margin-top: 60px;
     color: black;
-    display: inline-block; }
-    /* line 293, /Users/xaunlopez/Projects/wdi/05-backbone/xaun.github.io/source/stylesheets/style.scss */
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%; }
+    @media (max-width: 550px) {
+      /* line 337, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+      footer #contact-links {
+        margin-top: 90px; } }
+    /* line 349, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+    footer #contact-links ul {
+      padding-left: 0; }
+    /* line 353, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
     footer #contact-links li {
       list-style: none;
       display: inline-block;
-      padding: 40px 20px; }
+      padding: 0 20px;
+      margin-top: 40px; }
+      @media (max-width: 550px) {
+        /* line 353, /Users/xaunlopez/Projects/code/xaun.github.io/source/stylesheets/style.scss */
+        footer #contact-links li {
+          padding: 5px; } }

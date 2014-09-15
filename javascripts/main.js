@@ -34,20 +34,6 @@
       };
       return Carousel.init();
     })();
-    $('#threedee-description').hide();
-    $('#cloudchaser-description').hide();
-    $('.btn-5').on('click', function(event) {
-      var $nextElementID, dataObject;
-      event.preventDefault();
-      dataObject = $(event.target).data();
-      $nextElementID = dataObject['nextElementId'];
-      $($nextElementID).show();
-      $(this).hide();
-      $(event.target).parent().css('padding-bottom', '40px');
-      return $('body').animate({
-        scrollTop: $($nextElementID).offset().top - 90
-      }, 1000);
-    });
     $windowHeight = $(window).height();
     $windowWidth = $(window).width();
     $carouselImages = $('.carousel').children('img');
@@ -57,9 +43,47 @@
       return false;
     });
     $('#about').css('height', $windowHeight);
-    $('#projects-link').off('click').on('click', function() {
+    $('#projects-link').on('mouseover', function() {
+      $('#storebuilder-link').fadeIn();
+      $('#threedee-link').fadeIn();
+      $('#cloudchaser-link').fadeIn();
+      return $('#projects-link > li').css('border-bottom', '3px solid black');
+    });
+    $('nav').on('mouseleave', function() {
+      $('#storebuilder-link').fadeOut();
+      $('#threedee-link').fadeOut();
+      $('#cloudchaser-link').fadeOut();
+      return $('#projects-link > li').css('border-bottom', '');
+    });
+    $('.btn-5').on('click', function(event) {
+      var $divReveal, dataObject;
+      event.preventDefault();
+      debugger;
+      if ($(event.target).text() === 'More Info') {
+        dataObject = $(event.target).data();
+        $divReveal = dataObject['divReveal'];
+        $($divReveal).show();
+        return $(event.target).text('Less Info');
+      } else {
+        dataObject = $(event.target).data();
+        $divReveal = dataObject['divReveal'];
+        $($divReveal).hide();
+        return $(event.target).text('More Info');
+      }
+    });
+    $('#storebuilder-link').off('click').on('click', function() {
       return $("body").finish().animate({
-        scrollTop: $('#projects').offset().top - 90
+        scrollTop: $('#storebuilder-description').offset().top - 90
+      }, 1000);
+    });
+    $('#threedee-link').off('click').on('click', function() {
+      return $("body").finish().animate({
+        scrollTop: $('#threedee-description').offset().top - 90
+      }, 1000);
+    });
+    $('#cloudchaser-link').off('click').on('click', function() {
+      return $("body").finish().animate({
+        scrollTop: $('#cloudchaser-description').offset().top - 90
       }, 1000);
     });
     $('#contact-link').off('click').on('click', function() {

@@ -21,12 +21,21 @@
       <ul>
         <!-- %li -->
         <!-- %a{:href => "#"} About -->
-        <li>
-          <a href='#' id='projects-link'>Projects</a>
-        </li>
-        <li>
-          <a href='#' id='contact-link'>Contact</a>
-        </li>
+        <a href='#' id='projects-link'>
+          <li>Projects</li>
+        </a>
+        <a href='#' id='storebuilder-link' style='display: none;'>
+          <li>StoreBuilder</li>
+        </a>
+        <a href='#' id='threedee-link' style='display: none;'>
+          <li>Threedee</li>
+        </a>
+        <a href='#' id='cloudchaser-link' style='display: none;'>
+          <li>CloudChaser</li>
+        </a>
+        <a href='#' id='contact-link'>
+          <li>Contact</li>
+        </a>
       </ul>
     </nav>
     <div id='main-container'>
@@ -35,19 +44,18 @@
           <div class='about-margin' id='section'>
             <p>Passionate about coding, audio & the future of technology.</p>
             <p>From interactive applications, to database design. I want to build technologies that either inspire people, or make their lives easier.</p>
-            <p>
-              <span>Currently available for work in Sydney.</span>
-            </p>
+            <!-- %p -->
+            <!-- %span Currently available for work in Sydney. -->
           </div>
         </div>
       </div>
       <div id='projects'>
         <div id='storebuilder-description'>
-          <h3>Store Builder</h3>
-          <p>Store Builder (for lack of a better name), is a tool that allows you to build & manage your own online store.</p>
+          <h3>StoreBuilder</h3>
+          <p>StoreBuilder, is a tool that allows you to build & manage your own online store.</p>
           <p>Add & edit products, manage orders, add staff members, and send your store live into a responsive single-page application that saves cart items & guest information to Local Storage.</p>
           <p>
-            <small>Ruby 50.1% | JavaScript 16.8% | CSS 33.1%</small>
+            <small>Ruby 50% | JavaScript 17% | CSS 33%</small>
           </p>
           <a href='http://store-builder.herokuapp.com' target='_blank'>
             <div class='btn btn-1'>Build A Store</div>
@@ -61,7 +69,6 @@
             <div class='btn btn-4'>Github Code</div>
           </a>
           <br>
-          <span style='color: grey; font-size: 12px; padding-bottom: 10px;'>Click on image!</span>
           <div class='carousel-container'>
             <div class='carousel' id='storebuilder-carousel'>
               <img class='active' data-carousel='#storebuilder-carousel' src='/images/storebuilder-image1.png'>
@@ -76,14 +83,19 @@
               <img data-carousel='#storebuilder-carousel' src='/images/storebuilder-image11.png'>
             </div>
           </div>
-          <div class='btn btn-5' data-next-element-id='#threedee-description'>Next Project</div>
+          <div id='storebuilder-detailed' style='display: none; padding-top: 40px;'>
+            <p>StoreBuilder is my final project that I did for General Assembly's Web Development Immersive course.</p>
+            <p>The idea behind this project choice was not to make an app that's particularly needed in the world, but more to do something that had lots of models, associations and also used BackboneJS to send the store live into a single-page app style.</p>
+            <p>You can check-out items, see the orders show up in the admin tool of the respective store. Payment processing is not integrated at this point - everything is free!</p>
+          </div>
+          <div class='btn btn-5' data-div-reveal='#storebuilder-detailed'>More Info</div>
         </div>
         <div id='threedee-description'>
           <h3>Threedee</h3>
           <p>Threedee is an Interactive 3D visualiser built with Three.JS & the Web Audio API.</p>
           <p>Featuring customisable graphical settings, mp3 drag & drop, and Soundcloud URL link.</p>
           <p>
-            <small>Ruby 20.9% | JavaScript 67.6% | CSS 11.5%</small>
+            <small>Ruby 21% | JavaScript 68% | CSS 11%</small>
           </p>
           <a href='http://tadx-threedee.herokuapp.com' target='_blank'>
             <div class='btn btn-1'>Rave Here</div>
@@ -92,7 +104,6 @@
             <div class='btn btn-4'>Github Code</div>
           </a>
           <br>
-          <span style='color: grey; font-size: 12px; padding-bottom: 10px;'>Click on image!</span>
           <div class='carousel' id='threedee-carousel'>
             <img class='active' data-carousel='#threedee-carousel' src='/images/threedee-image1.png'>
             <img data-carousel='#threedee-carousel' src='/images/threedee-image4.png'>
@@ -102,14 +113,19 @@
             <img data-carousel='#threedee-carousel' src='/images/threedee-image3.png'>
             <img data-carousel='#threedee-carousel' src='/images/threedee-image2.png'>
           </div>
-          <div class='btn btn-5' data-next-element-id='#cloudchaser-description'>Next Project</div>
+          <div id='threedee-detailed' style='display: none; padding-top: 40px;'>
+            <p>Threedee is a group collaberation for our second project of General Assembly's Web Development Immersive course.</p>
+            <p>My main role in the collaberation was to get the Web Audio API playing & analysing sound, mp3 drag & drop, Soundcloud URL, and UI. The rest of the group spent the whole week on 3D visuals.</p>
+            <p>This project was an exciting eye-opener to how awesome the browser has become!</p>
+          </div>
+          <div class='btn btn-5' data-div-reveal='#threedee-detailed'>More Info</div>
         </div>
         <div id='cloudchaser-description'>
           <h3>CloudChaser</h3>
           <p>CloudChaser is a Soundclound player for Music & Podcasts.</p>
           <p>Search for tracks, or artists, and save to your offline stash!</p>
           <p>
-            <small>Ruby 77.3% | JavaScript 5.1% | CSS 17.6%</small>
+            <small>Ruby 77% | JavaScript 5% | CSS 18%</small>
           </p>
           <a href='http://cloudchaser.herokuapp.com/' target='_blank'>
             <div class='btn btn-1'>Listen Here</div>
@@ -118,55 +134,58 @@
             <div class='btn btn-4'>Github Code</div>
           </a>
           <br>
-          <span style='color: grey; font-size: 12px; padding-bottom: 10px;'>Click on image!</span>
           <div class='carousel' id='cloudchaser-carousel'>
             <img class='active' data-carousel='#cloudchaser-carousel' src='/images/cloudchaser-image3.png'>
             <img data-carousel='#cloudchaser-carousel' src='/images/cloudchaser-image1.png'>
             <img data-carousel='#cloudchaser-carousel' src='/images/cloudchaser-image2.png'>
             <img data-carousel='#cloudchaser-carousel' src='/images/cloudchaser-image4.png'>
           </div>
-        </div>
-        <footer>
-          <div id='contact-links'>
-            <ul>
-              <a href='http://au.linkedin.com/in/xaunlopez' target='_blank'>
-                <li>
-                  <img alt='linkedin' src='/images/linkedin.png'>
-                  <p>LinkedIn</p>
-                </li>
-              </a>
-              <a href='https://github.com/xaun' target='_blank'>
-                <li>
-                  <img alt='github' src='/images/github.png'>
-                  <p>GitHub</p>
-                </li>
-              </a>
-              <a href='https://twitter.com/xaunlopez' target='_blank'>
-                <li>
-                  <img alt='twitter' src='/images/twitter.png'>
-                  <p>Twitter</p>
-                </li>
-              </a>
-              <a href='mailto:xaunlopez@gmail.com?Subject=You%27re%20Awesome!' target='_blank'>
-                <li>
-                  <img alt='email' src='/images/email2.png'>
-                  <p>Email</p>
-                </li>
-              </a>
-              <a href='#'>
-                <li>
-                  <img alt='phone' id='phone-icon' src='/images/phone.png'>
-                  <p>Phone</p>
-                </li>
-              </a>
-            </ul>
+          <div id='cloudchaser-detailed' style='display: none; padding-top: 40px;'>
+            <p>CloudChaser is my first project that I built for General Assembly's Web Development Immersive course.</p>
+            <p>My vision for this website was born from frustration using the official Soundcloud website when searching for new music. I wanted to make the search results faster, lightweight and using a traditional itunes/finder table sorting system.</p>
           </div>
-        </footer>
+          <div class='btn btn-5' data-div-reveal='#cloudchaser-detailed'>More Info</div>
+        </div>
       </div>
+      <footer>
+        <div id='contact-links'>
+          <ul>
+            <a href='http://au.linkedin.com/in/xaunlopez' target='_blank'>
+              <li>
+                <img alt='linkedin' src='/images/linkedin.png'>
+                <p>LinkedIn</p>
+              </li>
+            </a>
+            <a href='https://github.com/xaun' target='_blank'>
+              <li>
+                <img alt='github' src='/images/github.png'>
+                <p>GitHub</p>
+              </li>
+            </a>
+            <a href='https://twitter.com/xaunlopez' target='_blank'>
+              <li>
+                <img alt='twitter' src='/images/twitter.png'>
+                <p>Twitter</p>
+              </li>
+            </a>
+            <a href='mailto:xaunlopez@gmail.com?Subject=You%27re%20Awesome!' target='_blank'>
+              <li>
+                <img alt='email' src='/images/email2.png'>
+                <p>Email</p>
+              </li>
+            </a>
+            <a href='#'>
+              <li>
+                <img alt='phone' id='phone-icon' src='/images/phone.png'>
+                <p>Phone</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script src='javascripts/jquery-2.1.1.min.js'></script>
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet'>
     <link href='stylesheets/bootstrap.min.css' rel='stylesheet'>
-
   </body>
 </html>
